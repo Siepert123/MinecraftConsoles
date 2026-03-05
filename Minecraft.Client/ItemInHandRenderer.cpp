@@ -52,10 +52,10 @@ ItemInHandRenderer::ItemInHandRenderer(Minecraft *minecraft, bool optimisedMinim
 		for( int yp = 0; yp < 16; yp++ )
 			for( int xp = 0; xp < 16; xp++ )
 			{
-				float u = (15-xp) / 256.0f;
-				float v = (15-yp) / 256.0f;
-				u += 0.5f / 256.0f;
-				v += 0.5f / 256.0f;
+				float u = (15-xp) / TEXTURE_ATLAS_WIDTH;
+				float v = (15-yp) / TEXTURE_ATLAS_HEIGHT;
+				u += 0.5f / TEXTURE_ATLAS_WIDTH;
+				v += 0.5f / TEXTURE_ATLAS_HEIGHT;
 				float x0 = xp / 16.0f;
 				float x1 = x0 + 1.0f/16.0f;
 				float y0 = yp / 16.0f;

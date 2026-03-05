@@ -1,5 +1,8 @@
 #pragma once
 
+static const float TEXTURE_ATLAS_WIDTH = 512.0F;
+static const float TEXTURE_ATLAS_HEIGHT = 512.0F;
+
 class Minecraft;
 class ItemInstance;
 class Minimap;
